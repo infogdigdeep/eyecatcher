@@ -1,0 +1,30 @@
+{
+  "name": "eyecatcher",
+  "version": "1.0.0",
+  "description": "Display Information",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect=5858 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infogdigdeep/eyecatcher.git"
+  },
+  "keywords": [
+    "chat",
+    "information"
+  ],
+  "author": "Wai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infogdigdeep/eyecatcher/issues"
+  },
+  "homepage": "https://github.com/infogdigdeep/eyecatcher#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "npm": "^6.4.1",
+    "websocket": "^1.0.26"
+  }
+}
