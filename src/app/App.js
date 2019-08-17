@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import connect from 'react-redux';
-import InfoPage from 'info/InfoPage';
+import {connect} from 'react-redux';
+import InfoPage from '../info/InfoPage';
 
 
 class App extends Component {
@@ -11,12 +11,13 @@ class App extends Component {
       </div>
     );
   }
-
-  mapStatesToProps(state) {
-    return {
-      infos : state.infos;
-    }
-  }
 }
 
-export default connect(mapStatesToPros)(App);
+function mapStatesToProps(state) {
+    return {
+      infos : state.infos
+    }
+  }
+
+
+export default connect(mapStatesToProps)(App);

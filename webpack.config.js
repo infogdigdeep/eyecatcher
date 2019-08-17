@@ -5,11 +5,13 @@ const htmlPlugin = new HTMLWebpackPlugin ({
   filename : './index.html'
 })
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.js'
   },
+  devtool: 'inline-source-map',
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
