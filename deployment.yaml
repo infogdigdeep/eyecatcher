@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eyecatcher
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eyecatcher
+  template:
+    metadata:
+      labels:
+        app: eyecatcher
+    spec:
+      containers:
+      - name: eyecatcher
+        image: eyecatcher:latest
+        ports:
+        - containerPort: 80
